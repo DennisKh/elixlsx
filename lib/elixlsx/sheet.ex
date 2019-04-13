@@ -74,7 +74,9 @@ defmodule Elixlsx.Sheet do
     end)
   end
 
+
   @spec set_cell(Sheet.t(), String.t(), any(), key: any) :: Sheet.t()
+
   @doc ~S"""
   Set a cell indexed by excel coordinates.
 
@@ -93,7 +95,9 @@ defmodule Elixlsx.Sheet do
     set_at(sheet, row, col, content, opts)
   end
 
+
   @spec set_at(Sheet.t(), non_neg_integer, non_neg_integer, any(), key: any) :: Sheet.t()
+
   @doc ~S"""
   Set a cell at a given row/column index. Indizes start at 0.
 

@@ -3,7 +3,7 @@ defmodule Elixlsx.Mixfile do
 
   def project do
     [app: :elixlsx,
-     version: "0.4.0",
+     version: "0.4.1",
      elixir: "~> 1.3",
      package: package(),
      description: "a writer for XLSX spreadsheet files",
@@ -19,9 +19,9 @@ defmodule Elixlsx.Mixfile do
   defp deps do
     [
       {:excheck, "~> 0.5", only: :test},
-      {:triq, github: "triqng/triq", only: :test},
+      {:triq, git: "https://gitlab.com/triq/triq.git", ref: "2c497398e020e06db8496f1d89f12481cc5adab9", only: :test},
       {:credo, "~> 0.5", only: [:dev, :test]},
-      {:ex_doc, "~> 0.14", only: [:dev]},
+      {:ex_doc, "~> 0.19", only: [:dev]},
       {:dialyxir, "~> 0.5", only: [:dev], runtime: false}
     ]
   end
