@@ -60,6 +60,7 @@ defmodule Elixlsx.Image do
       ".jpg" -> {"jpg", "image/jpeg"}
       ".jpeg" -> {"jpeg", "image/jpeg"}
       ".png" -> {"png", "image/png"}
+      ".bmp" -> {"bmp", "image/bmp"}
     end
   end
 end
